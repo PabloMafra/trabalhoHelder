@@ -7,24 +7,21 @@ using Microsoft.AspNetCore.Cors;
 namespace apiFuncionarios.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors("AllowReactApp")]
     [ApiController]
     public class SetorController : ControllerBase
     {
-        private readonly IFuncionarioRepositorio _setorRepositorio;
+        private readonly ISetorRepositorio _setorRepositorio;
 
-        public SetorController(IFuncionarioRepositorio setorRepositorio)
+        public SetorController(ISetorRepositorio setorRepositorio)
         {
             _setorRepositorio = setorRepositorio;
         }
 
         [HttpPost]
         [Route("cadastro")]
-        public async Task<ActionResult<Funcionario>> CadastrarUsuario([FromQuery] Funcionario nomeSetor)
+        public async Task<ActionResult<Setor>> CadastrarUsuario([FromBody] Setor nomeSetor)
         {
-            Response.Headers.Add("Access-Control-Allow-Origin", "*");
-
-            Funcionario setor = await _setorRepositorio.CadastrarFuncionario(nomeSetor);
+            Setor setor = await _setorRepositorio.CadastrarSetor(nomeSetor);
 
             return Ok(setor);
         }

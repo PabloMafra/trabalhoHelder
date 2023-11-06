@@ -25,6 +25,8 @@ namespace apiFuncionarios
                 );
 
             builder.Services.AddScoped<IFuncionarioRepositorio, FuncionarioRepositorio>();
+            builder.Services.AddScoped<ISetorRepositorio, SetorRepositorio>();
+
 
             var app = builder.Build();
 
@@ -40,7 +42,7 @@ namespace apiFuncionarios
             app.UseAuthorization();
 
             app.UseCors(builder => builder
-                .WithOrigins("http://localhost:3000/")
+                .WithOrigins("http://localhost:3000")
                 .AllowAnyMethod()
                 .AllowAnyHeader()
             );

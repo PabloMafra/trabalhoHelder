@@ -52,6 +52,24 @@ namespace apiFuncionarios.Migrations
 
                     b.ToTable("Funcionarios");
                 });
+
+            modelBuilder.Entity("apiFuncionarios.Models.Setor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Setor");
+                });
 #pragma warning restore 612, 618
         }
     }

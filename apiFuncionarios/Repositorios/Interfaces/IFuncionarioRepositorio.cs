@@ -7,7 +7,5 @@ namespace apiFuncionarios.Repositorios.Interfaces
         Task<List<Funcionario>> BuscarFuncionarios(string nome);
         Task<List<Funcionario>> ListarFuncionarios();
         Task<Funcionario> CadastrarFuncionario(Funcionario nome);
-
-
     }
 }
