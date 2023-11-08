@@ -1,9 +1,8 @@
 ﻿namespace apiFuncionarios.Models
 {
-    public class Setor
+    public class Estoque
     {
         public int Id { get; set; }
-        public string Nome { get; set; }
-        
+        public double Litragem { get; set; }
     }
 }

@@ -26,6 +26,7 @@ namespace apiFuncionarios
 
             builder.Services.AddScoped<IFuncionarioRepositorio, FuncionarioRepositorio>();
             builder.Services.AddScoped<ISetorRepositorio, SetorRepositorio>();
+            builder.Services.AddScoped<IEstoqueRepositorio, EstoqueRepositorio>();
 
 
             var app = builder.Build();
