@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using apiFuncionarios.Data;
 
@@ -10,9 +11,10 @@ using apiFuncionarios.Data;
 namespace apiFuncionarios.Migrations
 {
     [DbContext(typeof(SistemaDBContext))]
-    partial class SistemaDBContextModelSnapshot : ModelSnapshot
+    [Migration("20231109232637_tabelaEstoque3")]
+    partial class tabelaEstoque3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

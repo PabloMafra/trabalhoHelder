@@ -1,6 +1,5 @@
 ﻿using apiFuncionarios.Data.Map;
 using apiFuncionarios.Models;
-using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Microsoft.EntityFrameworkCore;
 
 namespace apiFuncionarios.Data
