@@ -27,9 +27,10 @@ namespace apiFuncionarios
             builder.Services.AddScoped<IFuncionarioRepositorio, FuncionarioRepositorio>();
             builder.Services.AddScoped<ISetorRepositorio, SetorRepositorio>();
             builder.Services.AddScoped<IEstoqueRepositorio, EstoqueRepositorio>();
+            builder.Services.AddScoped<IMedidasRepositorio, MedidasRepositorio>();
+            builder.Services.AddScoped<IEnderecoRepositorio, EnderecoRepositorio>();
 
-
-            var app = builder.Build();
+            var app = builder.Build();  
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
