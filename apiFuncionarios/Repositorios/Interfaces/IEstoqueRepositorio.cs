@@ -1,6 +1,6 @@
-﻿using apiFuncionarios.Models;
+﻿using ProjetoGuardaChuva.Models;
 
-namespace apiFuncionarios.Repositorios.Interfaces
+namespace ProjetoGuardaChuva.Repositorios.Interfaces
 {
     public interface IEstoqueRepositorio
     {

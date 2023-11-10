@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using apiFuncionarios.Data;
+using ProjetoGuardaChuva.Data;
 
 #nullable disable
 
-namespace apiFuncionarios.Migrations
+namespace ProjetoGuardaChuva.Migrations
 {
     [DbContext(typeof(SistemaDBContext))]
     [Migration("20231014003803_AdicionarColunasIdadeECargo")]

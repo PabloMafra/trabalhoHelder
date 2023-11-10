@@ -1,6 +1,6 @@
-﻿using apiFuncionarios.Models;
+﻿using ProjetoGuardaChuva.Models;
 
-namespace apiFuncionarios.Utils
+namespace ProjetoGuardaChuva.Utils
 {
     public class VolumeDaMicrobacia : Medidas
     {

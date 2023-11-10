@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using apiFuncionarios.Models;
-using apiFuncionarios.Repositorios.Interfaces;
+using ProjetoGuardaChuva.Models;
+using ProjetoGuardaChuva.Repositorios.Interfaces;
 using Microsoft.AspNetCore.Cors;
 
-namespace apiFuncionarios.Controllers
+namespace ProjetoGuardaChuva.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

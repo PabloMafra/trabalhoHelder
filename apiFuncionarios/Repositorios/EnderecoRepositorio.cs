@@ -1,8 +1,8 @@
-﻿using apiFuncionarios.Data;
-using apiFuncionarios.Models;
-using apiFuncionarios.Repositorios.Interfaces;
+﻿using ProjetoGuardaChuva.Data;
+using ProjetoGuardaChuva.Models;
+using ProjetoGuardaChuva.Repositorios.Interfaces;
 
-namespace apiFuncionarios.Repositorios
+namespace ProjetoGuardaChuva.Repositorios
 {
     public class EnderecoRepositorio : IEnderecoRepositorio
     {

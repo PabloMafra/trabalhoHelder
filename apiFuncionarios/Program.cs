@@ -1,10 +1,10 @@
-using apiFuncionarios.Data;
-using apiFuncionarios.Repositorios;
-using apiFuncionarios.Repositorios.Interfaces;
+using ProjetoGuardaChuva.Data;
+using ProjetoGuardaChuva.Repositorios;
+using ProjetoGuardaChuva.Repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Cors;
 
-namespace apiFuncionarios
+namespace ProjetoGuardaChuva
 {
     public class Program
     {

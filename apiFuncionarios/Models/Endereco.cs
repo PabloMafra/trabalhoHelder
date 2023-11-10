@@ -1,4 +1,4 @@
-﻿namespace apiFuncionarios.Models
+﻿namespace ProjetoGuardaChuva.Models
 {
     public class Endereco
     {

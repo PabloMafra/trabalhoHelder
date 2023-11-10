@@ -1,8 +1,8 @@
-﻿using apiFuncionarios.Models;
-using apiFuncionarios.Repositorios.Interfaces;
+﻿using ProjetoGuardaChuva.Models;
+using ProjetoGuardaChuva.Repositorios.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace apiFuncionarios.Controllers
+namespace ProjetoGuardaChuva.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -26,4 +26,4 @@ namespace apiFuncionarios.Controllers
     }
 }
 
-}
+

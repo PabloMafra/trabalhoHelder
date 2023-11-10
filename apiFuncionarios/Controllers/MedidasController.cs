@@ -1,8 +1,8 @@
-﻿using apiFuncionarios.Models;
-using apiFuncionarios.Repositorios.Interfaces;
+﻿using ProjetoGuardaChuva.Models;
+using ProjetoGuardaChuva.Repositorios.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace apiFuncionarios.Controllers
+namespace ProjetoGuardaChuva.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -17,9 +17,9 @@ namespace apiFuncionarios.Controllers
 
         [HttpPost]
         [Route("cadastro")]
-        public async Task<ActionResult<Medidas>> CadastrarMedidas([FromBody] Medidas medidas)
+        public async Task<ActionResult<Medidas>> CadastrarMedidas([FromBody] Medidas inputmedidas)
         {
-            Medidas medidas = await _medidasRepositorio.CadastrarMedidas(medidas);
+            Medidas medidas = await _medidasRepositorio.CadastroMedidas(inputmedidas);
 
             return Ok(medidas);
         }

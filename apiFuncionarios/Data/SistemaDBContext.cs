@@ -1,9 +1,9 @@
-﻿using apiFuncionarios.Data.Map;
-using apiFuncionarios.Models;
+﻿using ProjetoGuardaChuva.Data.Map;
+using ProjetoGuardaChuva.Models;
 using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Microsoft.EntityFrameworkCore;
 
-namespace apiFuncionarios.Data
+namespace ProjetoGuardaChuva.Data
 {
     public class SistemaDBContext : DbContext
     {

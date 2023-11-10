@@ -1,8 +1,8 @@
-﻿using apiFuncionarios.Models;
+﻿using ProjetoGuardaChuva.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace apiFuncionarios.Data.Map
+namespace ProjetoGuardaChuva.Data.Map
 {
     public class EstoqueMap : IEntityTypeConfiguration<Estoque>
     {

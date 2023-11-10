@@ -1,8 +1,8 @@
-﻿using apiFuncionarios.Models;
+﻿using ProjetoGuardaChuva.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 
-namespace apiFuncionarios.Data.Map
+namespace ProjetoGuardaChuva.Data.Map
 {
 
     public class MedidasMap : IEntityTypeConfiguration<Medidas>
@@ -15,16 +15,16 @@ namespace apiFuncionarios.Data.Map
             builder.Property(x => x.IdEndereco)
                 .IsRequired();
 
-            // Definir o relacionamento com a tabela Endereco
-            builder.HasOne(x => x.Endereco)
-                .WithMany() // Ou use .WithOne se for um relacionamento um-para-um
-                .HasForeignKey(x => x.IdEndereco);
+            //// Definir o relacionamento com a tabela Endereco
+            //builder.HasOne(x => x.Endereco)
+            //    .WithMany() // Ou use .WithOne se for um relacionamento um-para-um
+            //    .HasForeignKey(x => x.IdEndereco);
 
-            // Configurar o nome da chave estrangeira, se desejar
-            builder.HasOne(x => x.Endereco)
-                .WithMany()
-                .HasForeignKey(x => x.IdEndereco)
-                .HasConstraintName("FK_Medidas_Endereco");
+            //// Configurar o nome da chave estrangeira, se desejar
+            //builder.HasOne(x => x.Endereco)
+            //    .WithMany()
+            //    .HasForeignKey(x => x.IdEndereco)
+            //    .HasConstraintName("FK_Medidas_Endereco");
 
         }
     }

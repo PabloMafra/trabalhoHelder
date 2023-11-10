@@ -1,8 +1,8 @@
-﻿using apiFuncionarios.Models;
+﻿using ProjetoGuardaChuva.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 
-namespace apiFuncionarios.Data.Map
+namespace ProjetoGuardaChuva.Data.Map
 {
     public class EnderecoMap : IEntityTypeConfiguration<Endereco>
     {

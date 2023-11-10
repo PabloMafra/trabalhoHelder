@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace apiFuncionarios.Migrations
+namespace ProjetoGuardaChuva.Migrations
 {
     public partial class ColunaGenero : Migration
     {

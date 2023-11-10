@@ -1,9 +1,9 @@
-﻿using apiFuncionarios.Data;
-using apiFuncionarios.Models;
-using apiFuncionarios.Repositorios.Interfaces;
+﻿using ProjetoGuardaChuva.Data;
+using ProjetoGuardaChuva.Models;
+using ProjetoGuardaChuva.Repositorios.Interfaces;
 using Microsoft.AspNetCore.Mvc.Formatters;
 
-namespace apiFuncionarios.Repositorios
+namespace ProjetoGuardaChuva.Repositorios
 {
   public class MedidasRepositorio : IMedidasRepositorio
         {
